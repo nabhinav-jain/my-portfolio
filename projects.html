@@ -3,75 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects portfolio</title>
-    <link rel="stylesheet" href="projects.css">
+    <title>Portfolio webiste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-       <!-- navigation bar of homepage -->
-       <nav class="navbar">
-        <div class="tech-img">
-            <a href="index.html">
-                <img src="./images/aj-initial.jpg" alt="">
-            </a>
-        </div>
-        <!-- list of header elements -->
-        <ul class="list-header">
-            <!-- <li><a href="aboutme.html">About Me</a></li> -->
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact me</a></li>
-        </ul>
-    </nav>
-    <!-- navigation bar ends -->
-
-    <!-- project container -->
-    <div class="project-container">
-        <!-- adding first project -->
-        <div class="project">
-            <p>To-Do Application</p>
-            <ul>
-                <li>Made with html,css,javascript</li>
-                <li>Allow adding tasks , removing tasks and put task on ongoing mode</li>
-                <li><a href="https://github.com/nabhinav-jain/ToDo-App.git">Project link</a></li>
-            </ul>
+    <div class="w-full min-h-screen bg-gray-100"> <!-- Parent div to contain the whole page -->
+        <nav class="w-full h-[10vh] bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 text-white p-4 flex items-center">
+            <div class="container mx-auto flex justify-between items-center w-full">
+                <h2 class="text-2xl font-bold"><a href="index.html"> My Portfolio</a></h2>
+                <ul class="flex space-x-6 text-xl">
+                    <li class="leading-loose hover: cursor-pointer">
+                        <a href="projects.html">
+                        <span>Experience and Projects</span>
+                    </a>
+                        
+                    
+                    </li>
+                   
+                </ul>
+            </div>    
+        </nav>
+        
+        <div class="flex flex-col items-center justify-center bg-gradient-to-r from-blue-700 via-blue-500 to-violet-500 " style="border-top-width: 8px; border-color: rgb(3, 2, 6);">
+            <h2 class="text-6xl mt-2 ">Industry Experience</h2>
+            <p class="p-2 text-2xl">
+                I have accumulated 9 months of experience as a web developer at Mindrops, where I have contributed to various projects that have honed my skills and deepened my understanding of web development concepts. I have worked extensively with PHP, Laravel, MySQL, and JavaScript to build robust APIs, overhaul software architecture, and integrate third-party APIs to enhance functionality. Additionally, I have been involved in configuring and optimizing software to improve performance and meet evolving business needs.
+            </p>
         </div>
 
-        <!-- adding second project -->
-        <div class="project">
-            <p>Employee managment system</p>
-            <ul>
-                <li>Made with php and mySql</li>
-                <li>Full stack employee management solution allowing to read ,delete , create,modify data according to the needs</li>
-                <li><a href="https://github.com/nabhinav-jain/employee-management-system">Project link</a></li>
-            </ul>
+        <div>
+            <h1 class="text-center my-2" style="font-size:50px;"><span class="text-yellow-500">⚠️</span> Warning: Development at Work <span class="text-yellow-500">🚧</span></h1>
+
         </div>
 
-        <div class="project">
-            <p>Hit the mole</p>
-            <ul>
-                <li>Made with html,css,javascript</li>
-                <li>javascript game to hit the mole as many times as possible in given time limit to score highest score</li>
-                <li><a href="https://nabhinav-jain.github.io/Hit-the-mole/" target="_blank">Play game</a></li>
-            </ul>
         </div>
-
-        <div class="project">
-            <p>Password Generator</p>
-            <ul>
-                <li>Made with ReactJs</li>
-                <li>Generate a random password of variable length and custom use of numbers and special characters</li>
-                <li><a href="https://github.com/nabhinav-jain/passwordGenerator" target="_blank">Project Link</a></li>
-            </ul>
-        </div>
-
-       <div class="project">
-        <p>PHP Chatbot</p>
-        <ul>
-            <li>Made with PHP and mySql</li>
-            <li>Chatbot application that replies to user messages dynamically using sql database as response-request storage</li>
-            <li><a href="https://github.com/nabhinav-jain/PHP_chatbot">Project link</a></li>
-        </ul>
-       </div>
-
-    </div>
 </body>
 </html>

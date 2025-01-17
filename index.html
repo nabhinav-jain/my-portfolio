@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Jain portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- adding font-awesome css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio webiste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- navigation bar of homepage -->
-    <nav class="navbar">
-        <div class="tech-img">
-            <a href="index.html">
-            <img src="./images/aj-initial.jpg" alt="">
-            </a>
+    <div class="w-full min-h-screen bg-gray-100"> <!-- Parent div to contain the whole page -->
+        <nav class="w-full h-[10vh] bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 text-white p-4 flex items-center">
+            <div class="container mx-auto flex justify-between items-center w-full">
+                <h2 class="text-2xl font-bold"><a href="index.html"> My Portfolio</a></h2>
+                <ul class="flex space-x-6 text-xl">
+                    <li class="leading-loose hover: cursor-pointer">
+                        <a href="projects.html">
+                        <span >Experience and Projects</span>
+                    </a>
+                        
+                    
+                    </li>
+                   
+                </ul>
+            </div>    
+        </nav>
+
+        <div>
+            <img src="coding-bg.jpg" alt="Image could not be loaded" class="w-full h-[30vh] object-cover">
         </div>
-        <!-- list of header elements -->
-        <ul class="list-header">
-            <!-- <li><a href="aboutme.html">About Me</a></li> -->
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact me</a></li>
-        </ul>
-    </nav>
-    <!-- navigation bar ends here -->
 
-    <!-- section for education area -->
-    <div class="education-container">
-        <p style="font-size: 20px; text-decoration: underline; margin: 0 auto;">Education background</p>
-        <p>Bachelor's in Computer Application, graduated in 2024 with 70.4%</p><br>
-        <p>Schooling from RPVV Surajmal Vihar with 88.4% in Science(PCM)</p>
-    </div>
-     <!-- section for education area -->
-
-     <!-- skills section -->
-        <div class="skills-section">
-           <p> My Skills</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Php</li>
-                <li>ReactJs</li>
-                <li>Linux</li>
-                <li>DBMS</li>
-                <li>SQl</li>
-                <li>Algorithms</li> 
+        <div class="w-full h-[30vh] flex justify-center items-center flex-col
+        bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700">
+            <h1 class="text-2xl font-semibold sm:text-4xl">Skills:</h1>
+            <ul class="list-none pl-0">
+                <li class="inline-block border-2 border-black px-1 py-1 m-1 mx-6 sm:px-2">PHP</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">MySQL</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">Laravel</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">JavaScript</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">Databases</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">Networking</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">API Development</li>
+                <li class="inline-block border-2 border-black px-1 py-1 m-6 sm:px-2">Software Testing</li>
             </ul>
         </div>
-     <!-- end of skills section -->
 
-     <!-- footer for index -->
-     <footer class="footer-index">
-        <div class="social">
-      <a href="https://www.linkedin.com/in/abhinav-jain-7576b1230" target="_blank">  <i class="fa fa-linkedin"></i></a>
-        <p>Made By Abhinav Jain</p>
-     </footer>
-
+        <div class="w-full bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 flex flex-col mt-4 sm:mt-0">
+            <h2 class="text-4xl sm:text-5xl text-center mx-auto">Who am I</h2>
+            <p class="text-xl sm:text-2xl p-8">
+                I'm a passionate web developer at osso technologies 🌟, currently diving deep into backend development, writing PHP and Laravel code to create apps that truly impact people's lives 💻. What excites me about this field is the endless possibilities we have to build with just a computer – it's like magic 🪄. I love taking on new challenges 💪 and writing scalable, reliable code that stands the test of time. While backend is my main focus, I also enjoy frontend development – especially when it comes to consuming APIs and making the web feel alive 🌍✨
+            </p>
+        </div>
+        
+        
+        
+    
+        <div class="flex flex-col ">
+        <main class="container mx-auto p-6 text-center">
+            <h1 class="text-3xl font-bold">Welcome to My Portfolio</h1>
+            <p>Here you'll find my experience and projects.</p>
+        </main>
+    
+        <footer class="w-full bg-gray-800 text-white text-center p-4">
+            <p>&copy; 2025 My Portfolio</p>
+        </footer>
+    </div>
+    </div>
+    
+    
     
 </body>
 </html>
