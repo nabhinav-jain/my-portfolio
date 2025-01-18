@@ -31,11 +31,11 @@
             </div>    
         </nav>
 
-        <div>
+        <div class="img-section">
             <img src="coding-bg.jpg" alt="Image could not be loaded" class="w-full h-[30vh] object-cover">
         </div>
 
-        <div class="w-full h-[30vh] flex justify-center items-center flex-col
+        <div class="skill-section w-full h-[30vh] flex justify-center items-center flex-col
         bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700">
             <h1 class="text-2xl font-semibold sm:text-4xl">Skills:</h1>
             <ul class="list-none pl-0">
@@ -50,7 +50,24 @@
             </ul>
         </div>
 
-        <div class="w-full bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 flex flex-col mt-4 sm:mt-0">
+        <div class="skill-section-responsive w-full h-auto flex flex-col justify-center items-center 
+    bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 hidden">
+    <h1 class="text-xl font-medium mb-2">Skills:</h1>
+    <ul class="list-none pl-0 flex flex-col items-center">
+        <li class="border border-black px-2 py-1 mb-1 text-sm">PHP</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">MySQL</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">Laravel</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">JavaScript</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">Databases</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">Networking</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">API Development</li>
+        <li class="border border-black px-2 py-1 mb-1 text-sm">Software Testing</li>
+        </ul>
+        </div>
+
+
+
+        <div class="w-full bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 flex flex-col py-4 ">
             <h2 class="text-4xl sm:text-5xl text-center mx-auto">Who am I</h2>
             <p class="text-xl sm:text-2xl p-8">
                 I'm a passionate web developer at osso technologies 🌟, currently diving deep into backend development, writing PHP and Laravel code to create apps that truly impact people's lives 💻. What excites me about this field is the endless possibilities we have to build with just a computer – it's like magic 🪄. I love taking on new challenges 💪 and writing scalable, reliable code that stands the test of time. While backend is my main focus, I also enjoy frontend development – especially when it comes to consuming APIs and making the web feel alive 🌍✨
@@ -72,7 +89,24 @@
     </div>
     </div>
     
-    
+<script>
+    window.addEventListener('resize', toggleSkillSection);
+toggleSkillSection(); // Call initially to set correct layout on page load
+
+function toggleSkillSection() {
+    const largeScreenSection = document.querySelector('.skill-section');
+    const smallScreenSection = document.querySelector('.skill-section-responsive');
+
+    if (window.innerWidth < 500) {
+        largeScreenSection.style.display = 'none';
+        smallScreenSection.style.display = 'flex';
+    } else {
+        largeScreenSection.style.display = 'flex';
+        smallScreenSection.style.display = 'none';
+    }
+}
+
+</script>
     
 </body>
 </html>
