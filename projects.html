@@ -12,20 +12,24 @@
             margin: 0;
             padding: 0;
         }
+        @media (max-width: 600px) {
+    .port-text,
+    .exp-text {
+        font-size:13px;
+    }
+    }
     </style>
 </head>
 <body>
     <div class="w-full min-h-screen bg-gray-100"> <!-- Parent div to contain the whole page -->
         <nav class="w-full h-[10vh] bg-gradient-to-r from-blue-900 via-blue-500 to-violet-700 text-white p-4 flex items-center">
             <div class="container mx-auto flex justify-between items-center w-full">
-                <h2 class="text-2xl font-bold"><a href="index.html"> My Portfolio</a></h2>
+                <h2 class="text-2xl font-bold"><a href="index.html" class="port-text"> My Portfolio</a></h2>
                 <ul class="flex space-x-6 text-xl">
                     <li class="leading-loose hover: cursor-pointer">
                         <a href="projects.html">
-                        <span>Experience and Projects</span>
-                    </a>
-                        
-                    
+                        <span class="exp-text">Experience and Projects</span>
+                    </a>   
                     </li>
                    
                 </ul>
@@ -40,30 +44,50 @@
         </div>
 
         <div class="Projects text-center flex flex-col bg-gradient-to-r from-blue-700 via-blue-500 to-violet-700">
-          <section>
-            <h2 class="text-center underline text-4xl">Lazy Monkey: at Mindrops</h2>
-            <h4 class="text-start text-2xl">It is a centralized feedback management system designed for large premises, enabling visitors to scan QR codes at specific locations and provide data-driven feedback seamlessly.</h4>
-            <p class="text-start text-2xl mt-3 underline font-bold">What i did?</p>
-            <ul class="list-none pl-0 text-lg space-y-3">
-                <li class="flex items-center text-2xl">
-                    <span class="mr-2">👉</span>
-                    Integrated the Interakt API for WhatsApp notification functionality.
-                </li>
-                <li class="flex items-center text-2xl">
-                    <span class="mr-2">👉</span>
-                    Revamped the software architecture by restructuring the code to operate on a project basis instead of a location basis.
-                </li>
-                <li class="flex items-center text-2xl">
-                    <span class="mr-2">👉</span>
-                    Integrated ImageKit to capture images during feedback submission.
-                </li>
-                <li class="flex items-center text-2xl">
-                    <span class="mr-2">👉</span>
-                    Added several other functionalities and resolved bugs to ensure smooth and seamless operation.
-                </li>
-            </ul>
+            <section>
+                <h2 class="text-center underline text-4xl">Lazy Monkey: at Mindrops</h2>
+                <h4 class="text-start text-2xl">It is a centralized feedback management system designed for large premises, enabling visitors to scan QR codes at specific locations and provide data-driven feedback seamlessly.</h4>
+                <p class="text-start text-2xl mt-3 underline font-bold">What I did?</p>
+                <ul class="list-none pl-0 text-lg space-y-3">
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Integrated the Interakt API for WhatsApp notification functionality.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Revamped the software architecture by restructuring the code to operate on a project basis instead of a location basis.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Integrated ImageKit to capture images during feedback submission.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Added several other functionalities and resolved bugs to ensure smooth and seamless operation.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Integrated MSG91 API to enable SMS notifications for important feedback updates.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Developed custom backend APIs for improved data flow and scalability.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Wrote dynamic JavaScript to enhance frontend interactivity and user experience.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Optimized database queries for faster feedback retrieval and reporting.
+                    </li>
+                    <li class="flex items-center text-2xl">
+                        <span class="mr-2">👉</span>
+                        Conducted end-to-end testing to ensure the system meets performance and reliability standards.
+                    </li>
+                </ul>
+            </section>
             
-          </section>
 
         </div>
 
