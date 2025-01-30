@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           observer.unobserve(target);
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.15 });
   
     observer.observe(lmProject);
     observer.observe(bicciProject);
