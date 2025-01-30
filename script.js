@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const lmProject = document.getElementById("lm-project");
     const bicciProject = document.getElementById("bicci-project");
-    lmProject.style.opacity=0;
-    bicciProject.style.opacity=0;
+  
 
     function animateElement(element, fromX, toX) {
       element.style.opacity = 0;
