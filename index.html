@@ -19,6 +19,24 @@
         font-size:13px;
     }
     }
+
+    @keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px); 
+        font-weight: bold;
+    }
+    100% {
+        transform: translateY(0); 
+    }
+    }
+
+    .animate-updown {
+        animation: updown 1.5s ease-in-out infinite;
+    }
+
     </style>
 </head>
 <body>
@@ -118,8 +136,7 @@
                 <section class="my-2 opacity-0" id="lm-project">
                     <div class="flex justify-center">
                         <h2 class="text-center underline text-4xl">Lazy Monkey: at Mindrops - </h2>
-                        <a href="https://lazymonkey.in/" class="mx-2 text-2xl mt-auto underline" >Project website Link</a>
-
+                        <a href="https://lazymonkey.in/" class="mx-2 text-2xl mt-auto underline animate-updown" >Project website Link</a>
                     </div>
                     <h4 class="text-start text-2xl mx-4">It is a centralized feedback management system designed for large premises, enabling visitors to scan QR codes at specific locations and provide data-driven feedback seamlessly.</h4>
                     <p class="text-start text-2xl mt-3 underline font-bold mx-4">What I did?</p>
@@ -166,7 +183,7 @@
                 <section class="my-3 opacity-0" id="bicci-project">
                     <div class="flex justify-center ">
                         <h2 class="text-center underline text-4xl">Belgo Indian Chamber of Commerce and Industry: at Mindrops - </h2>
-                        <a href="https://bicci.be/" class="mx-2 text-2xl mt-auto underline" >Project Link</a>
+                        <a href="https://bicci.be/" class="mx-2 text-2xl mt-auto underline animate-updown" >Project Link</a>
                     </div>
                     <h4 class="text-start text-2xl mx-4">A chamber aimed at fostering trade and collaboration between India and Belgium by creating a platform for networking, partnerships, and knowledge sharing among businesses.</h4>
                     <p class="text-start text-2xl mt-3 underline font-bold mx-4">What I did?</p>
